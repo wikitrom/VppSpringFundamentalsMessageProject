@@ -4,5 +4,7 @@
 <beans>
 
 	<!-- add your bean definitions here! -->
-	
+	<bean id="motdService" class="se.mibis22.motd.MessageOfTheDayBasicImpl">
+		<property name="message" value="Hello World!"/>
+	</bean>
 </beans>

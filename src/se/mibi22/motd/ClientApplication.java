@@ -8,12 +8,10 @@ public class ClientApplication {
 
 		ClassPathXmlApplicationContext container = new ClassPathXmlApplicationContext("application.xml");
 
-		MessageOfTheDayService mrBSaysHello = container.getBean("motdService", MessageOfTheDayBasicImpl.class);
-
-		MessageOfTheDayService mrBSaysPing = container.getBean("motdServicePing", MessageOfTheDayBasicImpl.class);
+		MessageOfTheDayService mrBSaysHello = container.getBean("motdService", MessageOfTheDayService.class);
 
 		System.out.println(mrBSaysHello.getTodaysMessage());
-		System.out.println(mrBSaysPing.getTodaysMessage());
+		
 		container.close();
 
 	}

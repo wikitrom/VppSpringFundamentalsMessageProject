@@ -4,9 +4,22 @@
 <beans>
 
 	<!-- add your bean definitions here! -->
-	<bean id="motdService" class="se.mibi22.motd.MessageOfTheDayDailyDynamicImpl">
+	<bean id="motdService"
+		class="se.mibi22.motd.MessageOfTheDayDailyDynamicConfigurableImpl">
+		<property name="messageList">
+			<list>
+				<value>"Sunday, go back to sleep"</value>
+				<value>"Monday, slow start of work week "</value>
+				<value>"Tuesday ride is comming up... Yeah!!!"</value>
+				<value>"Wednesday is small Saturday"</value>
+				<value>"Thursday, panic... soon Friday"</value>
+				<value>"Fredagsmys"</value>
+				<value>"Bar walkabout!"</value>
+			</list>
+
+		</property>
 	</bean>
-	
+
 </beans>
 
 

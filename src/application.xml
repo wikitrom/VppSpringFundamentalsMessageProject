@@ -4,7 +4,15 @@
 <beans>
 
 	<!-- add your bean definitions here! -->
-	<bean id="motdService" class="se.mibis22.motd.MessageOfTheDayBasicImpl">
-		<property name="message" value="Hello World!"/>
+	<bean id="motdService" class="se.mibi22.motd.MessageOfTheDayBasicImpl">
+		<property name="message" value="Mr B says: -Hello World!"/>
 	</bean>
+	
+	<bean id="motdServicePing" class="se.mibi22.motd.MessageOfTheDayBasicImpl">
+		<property name="message" value="Mr B says: Echo request!"/>
+	</bean>
+	
+	
 </beans>
+
+
